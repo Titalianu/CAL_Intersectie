@@ -40,8 +40,16 @@ void TASK_500ms()
 { 
 
 }
-
+T_U8 u8Angle1=60;
+T_U8 u98Angle2=90;
 void TASK_1000ms()
-{
-
+{		
+		
+		vSetAngle(u8Angle1);
+		u8Angle1+=10;
+		if(u8Angle1==120)
+		{
+			u8Angle1=60;
+		}
+	
 }

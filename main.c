@@ -3,13 +3,12 @@
 
 int main()
 {
-    
-	vMotorInit();
-		vSetMotorDir(0);
-/*
+/*  
 	vSetMotorDir(0);
 	vSetMotorSpeed(30);
 */
+	TASK_Inits();
+	TASK_vSchedule();
 	while(1)
 	{
 /*
@@ -24,7 +23,6 @@ int main()
 				speed=10;
 			}
 		}
-		*/
 		int i=0;
 		int speed=10;
   		while(i<5)
@@ -36,7 +34,7 @@ int main()
 			i++;
     	}
 
-
+*/
 	}
     return 0;
 }
