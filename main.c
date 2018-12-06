@@ -7,10 +7,26 @@ int main()
 	vSetMotorDir(0);
 	vSetMotorSpeed(30);
 */
+	T_U8 black=0b1100;
+	T_U8 white=0b0;
+	T_U8 color;
 	TASK_Inits();
-	TASK_vSchedule();
+
+	//TASK_vSchedule();
 	while(1)
 	{
+			color=LF_u8ReadPins();
+			//0-alb 1-negru
+			if(color==white)
+			{
+				vSetMotorDir(0);
+				vSetMotorSpeed(10);
+			
+			}
+			else{
+				vSetMotorDir(0);
+				vSetMotorSpeed(10);
+			}
 /*
 		int speed;
 		vSetMotorDir(0);
